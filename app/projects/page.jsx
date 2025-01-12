@@ -24,9 +24,34 @@ const projectData = [
     image: "/assets/work/goodfolio_11zon.png",
     category: "HTML,CSS ",
     name: "Goodfolio Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    description: "A website for investment",
+    link: "https://divyesh350.github.io/goodfolio/",
+    github: "https://github.com/divyesh350/goodfolio?tab=readme-ov-file",
+  },
+  {
+    image: "/assets/work/animewebsite.png",
+    category: "HTML,CSS ",
+    name: "Anime Website",
+    description: "A website to download anime",
+    link: "https://divyesh350.github.io/Anime_Website/",
+    github: "https://github.com/divyesh350/Anime_Website",
+  },
+  {
+    image: "/assets/work/netflix.png",
+    category: "HTML,CSS ",
+    name: "Netflix Clone Website",
+    description: "A website for online streaming",
+    link: "https://divyesh350.github.io/netflix-clone-project/",
+    github: "https://github.com/divyesh350/netflix-clone-project",
+  },
+ 
+  {
+    image: "/assets/work/xypo.png",
+    category: "HTML,CSS ",
+    name: "xypo learning Website",
+    description: "A website for online education or course ",
+    link: "https://divyesh350.github.io/learning-website-xypo/",
+    github: "https://github.com/divyesh350/learning-website-xypo",
   },
 ];
 
