@@ -5,20 +5,20 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/assets/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/grocerystore.png",
+    category: "full stack",
+    name: "Grocery Website",
+    description: "A website for ecommerce grocery store",
+    link: "https://grocery-frontend-nnxj.onrender.com",
+    github: "https://github.com/divyesh350/Grocery",
   },
   {
-    image: "/assets/work/2.png",
-    category: "next js",
-    name: "Luminus Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/ems.png",
+    category: "react js",
+    name: "Employee Management System",
+    description: "A website to manage employees in a company",
+    link: "https://ems-nwnd.onrender.com",
+    github: "https://github.com/divyesh350/employeemangement",
   },
   {
     image: "/assets/work/1.png",

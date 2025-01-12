@@ -29,10 +29,10 @@ const Hero = () => {
               <Link href={"/contact"}>
                 <Button className="gap-x-2">Contact me <Send size={18} /></Button>
               </Link>
-
+              <Link href={"/resume.pdf"} target="_blank">
               <Button
                 variant="secondary"
-                className="gap-x-2">Download CV <Download size={18} /></Button>
+                className="gap-x-2">Download CV <Download size={18} /></Button></Link>
             </div>
             {/* socials  */}
             <Socials containerStyles="flex gap-x-6 mx-auto xl:mx-0" iconsStyles="text-foreground text-[23px] hover:text-primary transition-all" />
@@ -54,7 +54,7 @@ const Hero = () => {
               <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] absolute bg-no-repeat  -top-[4.25rem] right-2">
              
               </div>
-             <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative -top-[3.10rem] right-1" imgSrc={'/assets/hero/developer.png'}/>
+             <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative -top-[3.10rem] right-1" imgSrc={'/assets/hero/divyesh-hero.png'}/>
             </div>
         </div>
         {/* icon  */}
