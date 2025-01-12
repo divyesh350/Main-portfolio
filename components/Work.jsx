@@ -15,57 +15,58 @@ import { Pagination } from "swiper/modules";
 
 //components
 import ProjectCard from "@/components/ProjectCard";
-
 const projectData = [
   {
-    image: "/assets/work/3.png",
+    image: "/assets/work/grocerystore.png",
+    category: "full stack",
+    name: "Grocery Website",
+    description: "A website for ecommerce grocery store",
+    link: "https://grocery-frontend-nnxj.onrender.com",
+    github: "https://github.com/divyesh350/Grocery",
+  },
+  {
+    image: "/assets/work/ems.png",
     category: "react js",
-    name: "Nexa Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    name: "Employee Management System",
+    description: "A website to manage employees in a company",
+    link: "https://ems-nwnd.onrender.com",
+    github: "https://github.com/divyesh350/employeemangement",
   },
   {
-    image: "/assets/work/2.png",
-    category: "next js",
-    name: "luminus Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/goodfolio_11zon.png",
+    category: "HTML,CSS ",
+    name: "Goodfolio Website",
+    description: "A website for investment",
+    link: "https://divyesh350.github.io/goodfolio/",
+    github: "https://github.com/divyesh350/goodfolio?tab=readme-ov-file",
   },
   {
-    image: "/assets/work/1.png",
-    category: "next js",
-    name: "ignite Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/animewebsite.png",
+    category: "HTML,CSS ",
+    name: "Anime Website",
+    description: "A website to download anime",
+    link: "https://divyesh350.github.io/Anime_Website/",
+    github: "https://github.com/divyesh350/Anime_Website",
   },
   {
-    image: "/assets/work/4.png",
-    category: "full stack",
-    name: "Nova Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/netflix.png",
+    category: "HTML,CSS ",
+    name: "Netflix Clone Website",
+    description: "A website for online streaming",
+    link: "https://divyesh350.github.io/netflix-clone-project/",
+    github: "https://github.com/divyesh350/netflix-clone-project",
   },
+ 
   {
-    image: "/assets/work/1.png",
-    category: "full stack",
-    name: "solsatic Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/assets/work/3.png",
-    category: "next js",
-    name: "Nexa Website",
-    description: "A website for a company that sells electronics",
-    link: "/",
-    github: "/",
+    image: "/assets/work/xypo.png",
+    category: "HTML,CSS ",
+    name: "xypo learning Website",
+    description: "A website for online education or course ",
+    link: "https://divyesh350.github.io/learning-website-xypo/",
+    github: "https://github.com/divyesh350/learning-website-xypo",
   },
 ];
+
 
 const Work = () => {
   return (
