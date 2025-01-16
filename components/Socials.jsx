@@ -26,7 +26,7 @@ const icons = [
     name: <RiFacebookFill />,
   },
   {
-    path: '/',
+    path: 'https://www.instagram.com/divyesh_bakaraniya?igsh=MW5vaHVuczcyMnk2ZA==',
     name: <RiInstagramFill />,
   },
 ];
