@@ -1,7 +1,4 @@
 import { sendEmail } from '@/lib/mail';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -14,24 +11,26 @@ export default async function handler(req, res) {
     if (!name || !email || !message) {
       return res.status(400).json({ error: 'All fields are required.' });
     }
+
     const sender = {
       name: name,
       email: email,
-    }
+    };
     const recipient = {
       name: 'Divyesh',
-      email: 'listenmusicup@gmail.com',
-      }
+      email: process.env.RECEIVER_EMAIL, // Use env variable for flexibility
+    };
+
     const result = await sendEmail({
       from: sender,
       to: recipient,
       subject: 'Contact Form Submission',
-      message: message
-    })
+      message: message,
+    });
 
-    return res.status(200).json({ success: true , result});
+    return res.status(200).json({ success: true, result });
   } catch (error) {
-    console.error('Error sending email:', error);
-    return res.status(500).json({ error: 'Failed to send email' });
+    console.error('❌ Error sending email:', error);
+    return res.status(500).json({ error: 'Failed to send email', details: error.message });
   }
 }
