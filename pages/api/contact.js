@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
-      from: "contact@yourdomain.com",  // Use a verified domain
+      from: "onboarding@resend.dev",  // Use a verified domain
       to: process.env.RECEIVER_EMAIL,
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
