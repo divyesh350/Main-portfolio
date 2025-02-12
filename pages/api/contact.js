@@ -1,28 +1,29 @@
-import { Resend } from "resend";
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed" });
-  }
-
-  const { name, email, message } = req.body;
-
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: "All fields are required." });
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { name, email, message } = req.body;
 
-    await resend.emails.send({
-      from: "onboarding@resend.dev",  // Use a verified domain
-      to: process.env.RECEIVER_EMAIL,
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: 'All fields are required.' });
+    }
+
+    const data = await resend.emails.send({
+      from: 'onboarding@resend.dev',  // Change this to a verified domain if possible
+      to: process.env.RECEIVER_EMAIL, // Make sure this is set in .env.local
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
 
-    return res.status(200).json({ message: "Email sent successfully." });
+    return res.status(200).json({ success: true, data });
   } catch (error) {
-    return res.status(500).json({ message: "Email sending failed.", error });
+    console.error('Error sending email:', error);
+    return res.status(500).json({ error: 'Failed to send email' });
   }
 }
