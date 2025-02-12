@@ -1,38 +1,28 @@
-import clientPromise from "@/lib/mongodb";
+import { Resend } from "resend";
 
 export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const { name, email, message } = req.body;
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method Not Allowed" });
+  }
 
-    if (!name || !email || !message) {
-      return res.status(400).json({ message: "All fields are required." });
-    }
+  const { name, email, message } = req.body;
 
-    try {
-      const client = await clientPromise;
-      const db = client.db("portfolio"); // Replace with your database name
-      const collection = db.collection("messages");
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: "All fields are required." });
+  }
 
-      // Insert the message into the database
-      const result = await collection.insertOne({
-        name,
-        email,
-        message,
-        createdAt: new Date(),
-      });
+  try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-      return res.status(200).json({
-        message: "Your message has been saved successfully!",
-        result,
-      });
-    } catch (error) {
-      console.error("Error saving message to MongoDB:", error);
-      return res
-        .status(500)
-        .json({ message: "An error occurred while saving your message." });
-    }
-  } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    await resend.emails.send({
+      from: "contact@yourdomain.com",  // Use a verified domain
+      to: process.env.RECEIVER_EMAIL,
+      subject: `New Contact Form Submission from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    });
+
+    return res.status(200).json({ message: "Email sent successfully." });
+  } catch (error) {
+    return res.status(500).json({ message: "Email sending failed.", error });
   }
 }
