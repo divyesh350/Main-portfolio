@@ -5,6 +5,22 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/assets/work/mernecommerce.png",
+    category: "full stack",
+    name: "Ecommerce Website",
+    description: "A website for ecommerce store with admin panel",
+    link: "https://mern-ecommercestore-jsow.onrender.com",
+    github: "https://github.com/divyesh350/Mern-EcommerceStore",
+  },
+  {
+    image: "/assets/work/chatapp.png",
+    category: "full stack",
+    name: "Real Time Chat App",
+    description: "A website for real time chat app",
+    link: "https://realtime-chat-app-32qw.onrender.com",
+    github: "https://github.com/divyesh350/chat-app",
+  },
+  {
     image: "/assets/work/grocerystore.png",
     category: "full stack",
     name: "Grocery Website",
@@ -12,6 +28,7 @@ const projectData = [
     link: "https://grocery-frontend-nnxj.onrender.com",
     github: "https://github.com/divyesh350/Grocery",
   },
+  
   {
     image: "/assets/work/ems.png",
     category: "react js",

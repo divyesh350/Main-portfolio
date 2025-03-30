@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { User, ArrowRightIcon, MessagesSquare } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [responseMessage, setResponseMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,8 +26,8 @@ const Contact = () => {
   };
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
-    
+    e.preventDefault();
+    setIsLoading(true);
 
     try {
       const response = await fetch("/api/contact", {
@@ -36,16 +37,20 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
+
       const result = await response.json();
-      if (response.ok) {
-        alert(result.message); // Show success message in alert
+
+      if (result.success) {
+        toast.success(result.message);
         setFormData({ name: "", email: "", message: "" }); // Clear the form
       } else {
-        const errorResult = await response.json();
-        alert(result.message || "Something went wrong."); // Show error message in aler
+        toast.error(result.message || "Failed to send message. Please try again.");
       }
     } catch (error) {
-      alert("An error occurred while submitting the form.");
+      toast.error("An error occurred. Please try again later.");
+      console.error("Form submission error:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -102,6 +107,7 @@ const Contact = () => {
                 required
                 value={formData.name}
                 onChange={handleChange}
+                disabled={isLoading}
               />
               <User className="absolute right-6" size={20} />
             </div>
@@ -115,6 +121,7 @@ const Contact = () => {
                 required
                 value={formData.email}
                 onChange={handleChange}
+                disabled={isLoading}
               />
               <MailIcon className="absolute right-6" size={20} />
             </div>
@@ -128,12 +135,17 @@ const Contact = () => {
                 required
                 value={formData.message}
                 onChange={handleChange}
+                disabled={isLoading}
               />
               <MessagesSquare className="absolute right-6 top-4" size={20} />
             </div>
-            <Button className="flex items-center gap-x-1 max-w-[166px]" type="submit">
-              Let's Talk
-              <ArrowRightIcon size={20} className="ml-2" />
+            <Button 
+              className="flex items-center gap-x-1 max-w-[166px]" 
+              type="submit"
+              disabled={isLoading}
+            >
+              {isLoading ? "Sending..." : "Let's Talk"}
+              {!isLoading && <ArrowRightIcon size={20} className="ml-2" />}
             </Button>
           </form>
         </div>
