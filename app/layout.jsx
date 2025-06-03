@@ -1,4 +1,5 @@
 import { Outfit } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 //components
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <Footer />
           <Toaster position="top-center" />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
