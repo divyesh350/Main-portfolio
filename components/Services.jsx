@@ -5,7 +5,7 @@ import {Card,CardContent,CardDescription,CardHeader,CardTitle} from "@/component
 const servicesData=[
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
-    title:"Full Stack Web Apps (MERN & Next.js)",
+    title:"Full Stack Web Apps",
     description:"Build scalable web apps with React, Next.js, Node.js, and MongoDB. I use TypeScript, Zustand, and modern UI libraries like Tailwind or Chakra UI. Apps are responsive, SEO-ready, support dark/light mode, and Dockerized for smooth local development.",
   },
   {
