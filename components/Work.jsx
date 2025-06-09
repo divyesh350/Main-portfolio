@@ -17,12 +17,12 @@ import { Pagination } from "swiper/modules";
 import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
-    image: "/assets/work/mernecommerce.png",
+    image: "/assets/work/lush-lilac.png",
     category: "full stack",
-    name: "Ecommerce Website",
-    description: "A website for ecommerce store with admin panel",
-    link: "https://mern-ecommercestore-jsow.onrender.com",
-    github: "https://github.com/divyesh350/Mern-EcommerceStore",
+    name: "Ecommerce App for POD business",
+    description: "A website for selling POD products in ecommerce",
+    link: "https://lush-lilac.vercel.app/",
+    github: "https://github.com/divyesh350/lush-lilac-web",
   },
   {
     image: "/assets/work/chatapp.png",
@@ -33,12 +33,12 @@ const projectData = [
     github: "https://github.com/divyesh350/chat-app",
   },
   {
-    image: "/assets/work/lush-lilac.png",
+    image: "/assets/work/mernecommerce.png",
     category: "full stack",
-    name: "Ecommerce App for POD business",
-    description: "A website for selling POD products in ecommerce",
-    link: "https://lush-lilac.vercel.app/",
-    github: "https://github.com/divyesh350/lush-lilac-web",
+    name: "Ecommerce Website",
+    description: "A website for ecommerce store with admin panel",
+    link: "https://mern-ecommercestore-jsow.onrender.com",
+    github: "https://github.com/divyesh350/Mern-EcommerceStore",
   },
   {
     image: "/assets/work/grocerystore.png",
