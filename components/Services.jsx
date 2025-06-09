@@ -6,7 +6,7 @@ const servicesData=[
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
     title:"Full Stack Web Apps (MERN & Next.js)",
-    description:"Build modern, scalable web apps with React, Next.js, Node.js, and MongoDB. I use TypeScript for type safety, Zustand for state management, and modern UI libraries like Tailwind CSS, Chakra UI, or others as needed. Apps are responsive, support dark/light mode, SEO-ready, and Dockerized for consistent local development.",
+    description:"Build scalable web apps with React, Next.js, Node.js, and MongoDB. I use TypeScript, Zustand, and modern UI libraries like Tailwind or Chakra UI. Apps are responsive, SEO-ready, support dark/light mode, and Dockerized for smooth local development.",
   },
   {
     icon:<Blocks size={72} strokeWidth={0.8}/>,
@@ -16,7 +16,7 @@ const servicesData=[
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
     title:"Cloud Uploads & Email Automation",
-    description:"Secure and optimized file uploads using Multer, Sharp, Cloudinary, and optional AWS S3. I also build transactional email systems with Nodemailer, including custom HTML templates and PDF attachments. Newsletter-ready and serverless-compatible via Express or Next.js API routes.",
+    description:"Secure file uploads with Multer, Sharp, Cloudinary, and optional AWS S3. I also set up transactional emails with Nodemailer, custom HTML templates, and PDF support. Newsletter-ready and serverless-friendly via Express or Next.js APIs.",
   },
 ]
 const Services = () => {
