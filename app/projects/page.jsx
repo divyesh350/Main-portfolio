@@ -21,6 +21,14 @@ const projectData = [
     github: "https://github.com/divyesh350/chat-app",
   },
   {
+    image: "/assets/work/lush-lilac.png",
+    category: "full stack",
+    name: "Ecommerce App for POD business",
+    description: "A website for selling POD products in ecommerce",
+    link: "https://lush-lilac.vercel.app/",
+    github: "https://github.com/divyesh350/lush-lilac-web",
+  },
+  {
     image: "/assets/work/grocerystore.png",
     category: "full stack",
     name: "Grocery Website",

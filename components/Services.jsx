@@ -6,17 +6,17 @@ const servicesData=[
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
     title:"Full Stack Web Apps (MERN & Next.js)",
-    description:"I build robust and scalable web applications using modern technologies like React.js, Next.js, Node.js, Express, and MongoDB. By leveraging TypeScript, I ensure your codebase is clean, maintainable, and less prone to bugs. For smooth state management, I use Zustand, and for styling, I combine Tailwind CSS with Chakra UI to create responsive, visually appealing interfaces that support both dark and light modes. Whether you want client-side rendering or server-side rendering with Next.js, I can deliver SEO-friendly, fast-loading applications. Additionally, I provide Dockerized local development setups so your development environment is consistent and easy to manage.",
+    description:"Build modern, scalable web apps with React, Next.js, Node.js, and MongoDB. I use TypeScript for type safety, Zustand for state management, and modern UI libraries like Tailwind CSS, Chakra UI, or others as needed. Apps are responsive, support dark/light mode, SEO-ready, and Dockerized for consistent local development.",
   },
   {
     icon:<Blocks size={72} strokeWidth={0.8}/>,
     title:"E-Commerce & Dashboards",
-    description:"I develop custom e-commerce platforms tailored to your business needs, including product variants like size, color, and stock tracking. The order processing system supports popular payment methods such as Razorpay and Cash on Delivery (COD). To help you manage your business efficiently, I build admin dashboards featuring real-time analytics on sales, revenue, and users. The backend is secured using Express.js, MongoDB, and JWT for authentication. I also integrate automated receipt generation in PDF format and email confirmations via Nodemailer. For deployment, I use Docker and prepare your project for continuous integration workflows, with optional hosting and storage support on AWS EC2 and S3.",
+    description:"Custom eCommerce platforms with product variants, Razorpay & COD support, and admin dashboards featuring real-time analytics. Includes secure JWT auth, PDF receipts, email confirmations, and deployment with Docker & CI tools. AWS hosting and storage optional.",
   },
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
     title:"Cloud Uploads & Email Automation",
-    description:"To efficiently manage your media files, I implement secure and optimized file upload systems using Multer and Cloudinary, with optional AWS S3 integration for scalable cloud storage. Your backend services will be Dockerized for easy portability and deployment. For automated communication, I build transactional email systems with Nodemailer, including custom HTML templates for a professional look. Additionally, I offer newsletter systems that support custom email templates and PDF attachments to help you engage with your audience effectively. The entire setup is designed to be serverless-ready, using Next.js API routes or Express, making your application highly scalable.",
+    description:"Secure and optimized file uploads using Multer, Sharp, Cloudinary, and optional AWS S3. I also build transactional email systems with Nodemailer, including custom HTML templates and PDF attachments. Newsletter-ready and serverless-compatible via Express or Next.js API routes.",
   },
 ]
 const Services = () => {
