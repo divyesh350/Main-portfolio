@@ -5,18 +5,18 @@ import {Card,CardContent,CardDescription,CardHeader,CardTitle} from "@/component
 const servicesData=[
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
-    title:"Web Design",
-    description:"Professional web design services to create custom, responsive, and SEO-friendly websites that captivate your audience and drive results. Lets elevate your online presence together!",
+    title:"Full Stack Web Apps (MERN & Next.js)",
+    description:"I build robust and scalable web applications using modern technologies like React.js, Next.js, Node.js, Express, and MongoDB. By leveraging TypeScript, I ensure your codebase is clean, maintainable, and less prone to bugs. For smooth state management, I use Zustand, and for styling, I combine Tailwind CSS with Chakra UI to create responsive, visually appealing interfaces that support both dark and light modes. Whether you want client-side rendering or server-side rendering with Next.js, I can deliver SEO-friendly, fast-loading applications. Additionally, I provide Dockerized local development setups so your development environment is consistent and easy to manage.",
   },
   {
     icon:<Blocks size={72} strokeWidth={0.8}/>,
-    title:"Web Devlopment",
-    description:"We create responsive websites that are easy to navigate and use. We use the latest technologies to create websites that are fast, secure, and user-friendly.",
+    title:"E-Commerce & Dashboards",
+    description:"I develop custom e-commerce platforms tailored to your business needs, including product variants like size, color, and stock tracking. The order processing system supports popular payment methods such as Razorpay and Cash on Delivery (COD). To help you manage your business efficiently, I build admin dashboards featuring real-time analytics on sales, revenue, and users. The backend is secured using Express.js, MongoDB, and JWT for authentication. I also integrate automated receipt generation in PDF format and email confirmations via Nodemailer. For deployment, I use Docker and prepare your project for continuous integration workflows, with optional hosting and storage support on AWS EC2 and S3.",
   },
   {
     icon:<GanttChartSquare size={72} strokeWidth={0.8}/>,
-    title:"Digital Marketing",
-    description:"Expert digital marketing services to amplify your online presence and drive targeted traffic to your business. Elevate your brand with tailored strategies that deliver measurable results.",
+    title:"Cloud Uploads & Email Automation",
+    description:"To efficiently manage your media files, I implement secure and optimized file upload systems using Multer and Cloudinary, with optional AWS S3 integration for scalable cloud storage. Your backend services will be Dockerized for easy portability and deployment. For automated communication, I build transactional email systems with Nodemailer, including custom HTML templates for a professional look. Additionally, I offer newsletter systems that support custom email templates and PDF attachments to help you engage with your audience effectively. The entire setup is designed to be serverless-ready, using Next.js API routes or Express, making your application highly scalable.",
   },
 ]
 const Services = () => {

@@ -80,7 +80,7 @@ const Contact = () => {
             {/* mail  */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
-              <div>bakaraniyadivyesh94@gmail.com</div>
+              <div>bakaraniyadivyesh94@outlook.com</div>
             </div>
             {/* address  */}
             <div className="flex items-center gap-x-8">

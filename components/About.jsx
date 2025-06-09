@@ -22,11 +22,11 @@ const infoData = [
   },
   {
     icon: <MailIcon size={20} />,
-    text: "bakaraniyadivyesh@gmail.com",
+    text: "bakaraniyadivyesh@outlook.com",
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born on 29 Sep, 2004",
+    text: "Born on 28 Sep, 2004",
   },
   {
     icon: <GraduationCap size={20} />,
@@ -42,16 +42,16 @@ const skillData = [
     title: "skills",
     data: [
       {
-        name: "HTML,CSS",
+        name: "HTML,CSS,Javascript,TypeScript",
       },
       {
-        name: "Front-end Development",
+        name: "ReactJS,NodeJS,ExpressJS,NextJS",
       },
       {
-        name: "Javascript,PHP",
+        name: "MongoDB,MySQL,PosgreSQL",
       },
       {
-        name: "Back-end Development",
+        name: "Git,GitHub,Docker,CI/CD pipelines",
       },
     ],
   },
@@ -62,10 +62,31 @@ const skillData = [
         imgPath: "/assets/about/vscode.svg",
       },
       {
-        imgPath: "/assets/about/figma.svg",
+        imgPath: "/assets/about/postman.svg",
       },
       {
-        imgPath: "/assets/about/wordpress.svg",
+        imgPath: "/assets/about/node-js.svg",
+      },
+      {
+        imgPath: "/assets/about/react.svg",
+      },
+      {
+        imgPath: "/assets/about/mysql.svg",
+      },
+      {
+        imgPath: "/assets/about/git.svg",
+      },
+      {
+        imgPath: "/assets/about/github.svg",
+      },
+      {
+        imgPath: "/assets/about/postgresql.svg",
+      },
+      {
+        imgPath: "/assets/about/docker.svg",
+      },
+      {
+        imgPath: "/assets/about/mongodb.svg",
       },
     ],
   },
@@ -85,9 +106,9 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "ABC Corporation",
-        role: "Software Developer",
-        years: "2026-2027",
+        company: "Gribbble",
+        role: "Frontend Web Developer",
+        years: "March/2025-April/2025",
       },
     ],
   },
