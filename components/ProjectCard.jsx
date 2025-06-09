@@ -6,7 +6,6 @@ import { Badge } from "./ui/badge";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 const ProjectCard = ({ project }) => {
-  console.log(project);
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
