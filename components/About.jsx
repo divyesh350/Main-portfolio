@@ -34,7 +34,7 @@ const infoData = [
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "94,harivilla row house,nansad road,Kamrej,Surat,Gujarat,India-394185",
+    text: "Bengaluru",
   },
 ];
 const skillData = [
