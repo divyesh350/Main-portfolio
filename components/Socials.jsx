@@ -14,7 +14,7 @@ const icons = [
   //   name: <RiYoutubeFill />,
   // },
   {
-    path: 'www.linkedin.com/in/divyeshbakaraniya',
+    path: 'https://www.linkedin.com/in/divyeshbakaraniya',
     name: <RiLinkedinFill />,
   },
   {
