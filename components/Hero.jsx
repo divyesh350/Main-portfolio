@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex justify-between gap-x-8">
           {/* text  */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Wev Developer</div>
+            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Web Developer</div>
             <h1 className="h1 mb-3">Hello, my name is Divyesh Bakaraniya</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">Brief description with insights into myself, my vocational journey, and what i engage in professionally.</p>
             {/* buttons */}
@@ -42,15 +42,15 @@ const Hero = () => {
              {/* image  */}
              <div className="hidden xl:flex relative">
               {/* badge 1  */}
-              <Badge icon={<RiBriefcase4Fill/>} endCountNum={1} badgeText={"Years of Experience"} containerStyles="absolute top-[24%] -left-[5rem]"/>
+              {/* <Badge icon={<RiBriefcase4Fill/>} endCountNum={1} badgeText={"Years of Experience"} containerStyles="absolute top-[24%] -left-[5rem]"/> */}
               {/* badge 2  */}
               <Badge icon={<RiTodoFill/>} endCountNum={9} badgeText={"Finished Projects"} 
               endCountText={''}
               containerStyles="absolute top-[80%] -left-[1rem]"/>
               {/* badge 3  */}
-              <Badge icon={<RiTeamFill/>} endCountNum={5} badgeText={"Happy Clients"} 
+              {/* <Badge icon={<RiTeamFill/>} endCountNum={5} badgeText={"Happy Clients"} 
               endCountText={''}
-              containerStyles="absolute top-[55%] -right-8"/>
+              containerStyles="absolute top-[55%] -right-8"/> */}
               <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] absolute bg-no-repeat  -top-[4.25rem] right-2">
              
               </div>

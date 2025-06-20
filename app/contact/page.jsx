@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let's Work Together</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
           </div>
           {/* illustrations  */}
@@ -85,14 +85,14 @@ const Contact = () => {
             {/* address  */}
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>Bengaluru
+              <div>India
               </div>
             </div>
             {/* phone  */}
-            <div className="flex items-center gap-x-8">
+            {/* <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
               <div>+91 7487831144</div>
-            </div>
+            </div> */}
           </div>
           <form className="flex flex-col gap-y-4" onSubmit={handleSubmit}>
             {/* input  */}

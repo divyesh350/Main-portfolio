@@ -34,7 +34,7 @@ const infoData = [
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "Bengaluru",
+    text: "India",
   },
 ];
 const skillData = [

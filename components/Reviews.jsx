@@ -24,42 +24,42 @@ const reviewsData = [
     name: "Richard Thompson",
     job: "Chef",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "The website created for my restaurant is visually stunning and easy for my customers to use. It has truly elevated my business!",
   },
   {
     avatar: "/assets/reviews/avatar-2.png",
     name: "Evelyn Anderson",
     job: "Interior Designer",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "The portfolio site perfectly showcases my design projects. The elegant layout and smooth navigation help me attract more clients.",
   },
   {
     avatar: "/assets/reviews/avatar-3.png",
     name: "John doe",
     job: "Game developer",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "My game development portfolio looks fantastic! The interactive features and modern design really highlight my skills and projects.",
   },
   {
     avatar: "/assets/reviews/avatar-4.png",
     name: "Emily smith",
     job: "Therapist",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "The website for my therapy practice is warm and welcoming. Clients find it easy to book sessions and learn about my services.",
   },
   {
     avatar: "/assets/reviews/avatar-5.png",
     name: "oliver taylor",
     job: "Engineer",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "The professional website built for me clearly presents my engineering projects and expertise. It’s helped me connect with new opportunities.",
   },
   {
     avatar: "/assets/reviews/avatar-6.png",
     name: "Mason Wilson",
     job: "Video Editor",
     review:
-      "i have gave my restaurant project and i got very good services for my restaurant website.",
+      "My video editing portfolio is now sleek and engaging. The site makes it easy to showcase my work and attract new clients.",
   },
 ];
 
